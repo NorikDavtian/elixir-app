@@ -1,0 +1,6 @@
+env: flex
+runtime: gs://elixir-runtime/elixir.yaml
+runtime_config:
+    release_app: hello
+beta_settings:
+    cloud_sql_instances: babycrm-1560367321017:us-central1:hellodb
