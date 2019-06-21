@@ -9,9 +9,19 @@
   <%= text_input f, :name %>
   <%= error_tag f, :name %>
 
-  <%= label f, :email %>
-  <%= text_input f, :email %>
-  <%= error_tag f, :email %>
+  <%= label f, :username %>
+  <%= text_input f, :username %>
+  <%= error_tag f, :username %>
+
+  <%= inputs_for f, :credential, fn cf -> %>
+    <%= label cf, :email %>
+    <%= text_input cf, :email %>
+    <%= error_tag cf, :email %>
+    <%= label cf, :passwd %>
+    <%= text_input cf, :passwd %>
+    <%= error_tag cf, :passwd %>
+
+  <% end %>
 
   <div>
     <%= submit "Save" %>

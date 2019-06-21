@@ -8,8 +8,18 @@
   </li>
 
   <li>
+    <strong>Username:</strong>
+    <%= @user.username %>
+  </li>
+
+  <li>
     <strong>Email:</strong>
-    <%= @user.email %>
+    <%= @user.credential && @user.credential.email %>
+  </li>
+
+  <li>
+    <strong>Password:</strong>
+    <%= @user.credential && @user.credential.passwd %>
   </li>
 
 </ul>
